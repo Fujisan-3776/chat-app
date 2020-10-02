@@ -14,7 +14,7 @@
 <%# -------------------------------------------- %>
 
 <div class="messages">
-  <div class="message">
+  <%# <div class="message">
     <div class="upper-message">
       <div class="message-user">
         Tom
@@ -44,7 +44,8 @@
         こんばんは
       </div>
     </div>
-  </div>
+  </div> %>
+    <%= render partial: 'message', collection: @messages %>
 </div>
 
 <%# -------------------------------------------- %>
